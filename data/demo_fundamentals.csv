@@ -1,0 +1,7 @@
+ticker,sector,published_at,roe,operating_margin,revenue_growth,earnings_growth,fcf_yield,net_debt_ebitda,pe
+DEMO1,Demonstração,2026-08-01,0.08,0.1,0.02,0.03,0.04,3.0,20
+DEMO2,Demonstração,2026-08-01,0.10500000000000001,0.12000000000000001,0.03,0.04,0.05,2.7,18
+DEMO3,Demonstração,2026-08-01,0.13,0.14,0.04,0.05,0.06,2.4,16
+DEMO4,Demonstração,2026-08-01,0.15500000000000003,0.16,0.05,0.06,0.07,2.1,14
+DEMO5,Demonstração,2026-08-01,0.18,0.18,0.06,0.07,0.08,1.8,12
+DEMO6,Demonstração,2026-08-01,0.20500000000000002,0.2,0.07,0.08,0.09,1.5,10
