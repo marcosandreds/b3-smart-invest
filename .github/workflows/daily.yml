@@ -1,0 +1,35 @@
+name: Atualizar dados B3
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 22 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: dados-b3
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - name: Atualizar snapshot fundamental semanal
+        continue-on-error: true
+        run: python fundamentals.py
+      - run: python collect.py
+      - name: Salvar dados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Atualizar dados diários'
+            git push
+          fi
