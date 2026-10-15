@@ -1,0 +1,50 @@
+{
+  "observed_at": "2026-10-15T00:00:00",
+  "records": 40,
+  "errors": [
+    {
+      "ticker": "B3SA3",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "BBAS3",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "BBDC3",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "BBDC4",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "BBSE3",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "BPAC11",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "CCRO3",
+      "error": "Setor ausente"
+    },
+    {
+      "ticker": "EMBR3",
+      "error": "Setor ausente"
+    },
+    {
+      "ticker": "ITUB4",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    },
+    {
+      "ticker": "NTCO3",
+      "error": "Setor ausente"
+    },
+    {
+      "ticker": "SANB11",
+      "error": "Setor financeiro exige modelo espec\u00edfico"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-10-15T09:35:17.933253+00:00",
+  "errors": [
+    {
+      "ticker": "CCRO3",
+      "error": "Hist\u00f3rico insuficiente"
+    },
+    {
+      "ticker": "EMBR3",
+      "error": "Hist\u00f3rico insuficiente"
+    },
+    {
+      "ticker": "NTCO3",
+      "error": "Hist\u00f3rico insuficiente"
+    }
+  ]
+}
