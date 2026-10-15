@@ -54,7 +54,7 @@ def ranking(prices,f,weights=(50,30,20),minimum=5000000,floor=60):
     r=pd.DataFrame(rows)
     if r.empty:return r
     if f.empty:r['fundamental']=np.nan;r['coverage']=0
-    else:r=r.merge(fundamental_scores(f,r.date.max())[['ticker','fundamental','coverage']],on='ticker',how='left')
+    else:r=r.merge(fundamental_scores(f,pd.Timestamp.now().normalize())[['ticker','fundamental','coverage']],on='ticker',how='left')
     ws=np.asarray(weights)/sum(weights)
     r['score']=r.fundamental*ws[0]+r.technical*ws[1]+r.risk*ws[2]
     r['signal']=np.where(r.fundamental.isna(),'Fundamentos pendentes',np.where((r.fundamental>=floor)&r.trigger&(r.score>=75),'Candidata','Observar'))
